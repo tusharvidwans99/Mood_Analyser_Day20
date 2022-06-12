@@ -18,14 +18,25 @@ namespace MoodAnalyser_Day20
 
         public string AnalyseMood()
         {
-            if (message.Contains("sad"))
+            NullException nullException = new NullException();
+
+            try
             {
-                return "Sad";
-            }
-            else
+                if (message.Contains("sad"))
+                {
+                    return "Sad";
+                }
+                else
+                {
+                    return "Happy";
+                }
+                nullException.shownullException(message);
+            }catch(MoodAnalysisException e)
             {
+                Console.WriteLine(e.Message);
                 return "Happy";
             }
+            
         }
 
     }
