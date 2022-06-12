@@ -14,11 +14,11 @@ namespace TestMoodAnalyser
             string expected_Output = "Sad";
             string actual_Output;
 
-            MoodAnalyser moodAnaylyser = new MoodAnalyser();
+            MoodAnalyser moodAnaylyser = new MoodAnalyser(message.ToLower());
 
             //Act
 
-            actual_Output = moodAnaylyser.AnalyseMood(message.ToLower());
+            actual_Output = moodAnaylyser.AnalyseMood();
 
             //Assert
             Assert.AreEqual(expected_Output, actual_Output);
@@ -34,11 +34,11 @@ namespace TestMoodAnalyser
             string expected_Output = "Happy";
             string actual_Output;
 
-            MoodAnalyser moodAnaylyser = new MoodAnalyser();
+            MoodAnalyser moodAnaylyser = new MoodAnalyser(message.ToLower());
 
             //Act
 
-            actual_Output = moodAnaylyser.AnalyseMood(message.ToLower());
+            actual_Output = moodAnaylyser.AnalyseMood();
 
             //Assert
             Assert.AreEqual(expected_Output, actual_Output);
