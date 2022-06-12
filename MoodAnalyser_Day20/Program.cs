@@ -7,11 +7,6 @@
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to the program of Mood Analyser");
-            MoodAnalyser moodAnalyser = new MoodAnalyser();
-
-            Console.WriteLine(moodAnalyser.AnalyseMood("I'm in any mood".ToLower()));
-
 
         }
     }
