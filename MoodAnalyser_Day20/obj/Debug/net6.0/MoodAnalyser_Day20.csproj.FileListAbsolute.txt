@@ -1,0 +1,15 @@
+C:\Users\tusha\source\repos\MoodAnalyser_Day20\MoodAnalyser_Day20\bin\Debug\net6.0\MoodAnalyser_Day20.exe
+C:\Users\tusha\source\repos\MoodAnalyser_Day20\MoodAnalyser_Day20\bin\Debug\net6.0\MoodAnalyser_Day20.deps.json
+C:\Users\tusha\source\repos\MoodAnalyser_Day20\MoodAnalyser_Day20\bin\Debug\net6.0\MoodAnalyser_Day20.runtimeconfig.json
+C:\Users\tusha\source\repos\MoodAnalyser_Day20\MoodAnalyser_Day20\bin\Debug\net6.0\MoodAnalyser_Day20.dll
+C:\Users\tusha\source\repos\MoodAnalyser_Day20\MoodAnalyser_Day20\bin\Debug\net6.0\MoodAnalyser_Day20.pdb
+C:\Users\tusha\source\repos\MoodAnalyser_Day20\MoodAnalyser_Day20\obj\Debug\net6.0\MoodAnalyser_Day20.csproj.AssemblyReference.cache
+C:\Users\tusha\source\repos\MoodAnalyser_Day20\MoodAnalyser_Day20\obj\Debug\net6.0\MoodAnalyser_Day20.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tusha\source\repos\MoodAnalyser_Day20\MoodAnalyser_Day20\obj\Debug\net6.0\MoodAnalyser_Day20.AssemblyInfoInputs.cache
+C:\Users\tusha\source\repos\MoodAnalyser_Day20\MoodAnalyser_Day20\obj\Debug\net6.0\MoodAnalyser_Day20.AssemblyInfo.cs
+C:\Users\tusha\source\repos\MoodAnalyser_Day20\MoodAnalyser_Day20\obj\Debug\net6.0\MoodAnalyser_Day20.csproj.CoreCompileInputs.cache
+C:\Users\tusha\source\repos\MoodAnalyser_Day20\MoodAnalyser_Day20\obj\Debug\net6.0\MoodAnalyser_Day20.dll
+C:\Users\tusha\source\repos\MoodAnalyser_Day20\MoodAnalyser_Day20\obj\Debug\net6.0\refint\MoodAnalyser_Day20.dll
+C:\Users\tusha\source\repos\MoodAnalyser_Day20\MoodAnalyser_Day20\obj\Debug\net6.0\MoodAnalyser_Day20.pdb
+C:\Users\tusha\source\repos\MoodAnalyser_Day20\MoodAnalyser_Day20\obj\Debug\net6.0\MoodAnalyser_Day20.genruntimeconfig.cache
+C:\Users\tusha\source\repos\MoodAnalyser_Day20\MoodAnalyser_Day20\obj\Debug\net6.0\ref\MoodAnalyser_Day20.dll
