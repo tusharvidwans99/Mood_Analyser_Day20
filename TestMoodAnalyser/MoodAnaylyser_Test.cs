@@ -65,5 +65,26 @@ namespace TestMoodAnalyser
             Assert.AreEqual(expected_Output, actual_Output);
 
         }
+
+
+        [TestMethod]
+        public void AnalyseMood_EmptyTest()
+        {
+
+            //Arrange
+            string message = "";
+            string expected_Output = "Empty Mood";
+            string actual_Output;
+
+            MoodAnalyser moodAnaylyser = new MoodAnalyser(message);
+
+            //Act
+
+            actual_Output = moodAnaylyser.AnalyseMood();
+
+            //Assert
+            Assert.AreEqual(expected_Output, actual_Output);
+
+        }
     }
 }
