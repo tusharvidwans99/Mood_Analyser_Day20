@@ -10,7 +10,7 @@ namespace MoodAnalyser_Day20
     {
         public string message;
 
-
+        
         public MoodAnalyser(string message)
         {
             this.message = message;
@@ -22,7 +22,7 @@ namespace MoodAnalyser_Day20
 
             try
             {
-                if(message == null)
+                if(message == null || message == "")
                 {
                     nullException.shownullException(message);
                 }
@@ -37,7 +37,7 @@ namespace MoodAnalyser_Day20
             }catch(MoodAnalysisException e)
             {
                 Console.WriteLine(e.Message);
-                return "Happy";
+                return e.Message;
             }
             
         }

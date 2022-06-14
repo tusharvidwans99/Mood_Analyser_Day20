@@ -12,7 +12,11 @@ namespace MoodAnalyser_Day20
         {
             if(message == null)
             {
-                throw (new MoodAnalysisException("Enterd Invalid Input"));
+                throw (new MoodAnalysisException("Enterd Null Input"));
+            }
+            else if(message == "")
+            {
+                throw (new MoodAnalysisException("Empty Mood"));
             }
         }
     }

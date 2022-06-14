@@ -52,7 +52,7 @@ namespace TestMoodAnalyser
 
             //Arrange
             string message = null;
-            string expected_Output = "Happy";
+            string expected_Output = "Enterd Null Input";
             string actual_Output;
 
             MoodAnalyser moodAnaylyser = new MoodAnalyser(message);
