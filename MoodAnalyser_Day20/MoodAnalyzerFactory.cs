@@ -71,7 +71,7 @@ namespace MoodAnalyser_Day20
                 }
                 catch (ArgumentNullException)
                 {
-                    throw new MoodAnalysisCustomException(MoodAnalysisCustomException.ExceptionType.NO_SUCH_CLASS, "No class found");
+                    throw new MoodAnalysisCustomException(MoodAnalysisCustomException.ExceptionType.NO_SUCH_CLASS, "Class Not Found");
                 }
             }
             else

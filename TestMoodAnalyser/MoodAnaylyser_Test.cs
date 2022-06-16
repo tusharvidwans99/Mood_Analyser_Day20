@@ -87,6 +87,10 @@ namespace TestMoodAnalyser
 
         }
 
+        /// <summary>
+        /// Test case 4.1 Given MoodAnalyse class Name should return Moodanalyser object.
+        /// </summary>
+
         [TestMethod]
         public void ClassNameReturnSameObject()
         {
@@ -103,8 +107,54 @@ namespace TestMoodAnalyser
         }
 
 
-       
-       
+
+        /// <summary>
+        /// Test Case 4.2 Given improper class name should throw MoodAnalysisException.
+        /// </summary>
+        [TestMethod]
+        public void GivenImproperClassNameShouldThrowMoodAnalyserCustomeException()
+        {
+            //Arrange
+            string expected = "Class Not Found";
+
+            
+            try
+            {
+                //Act
+                object moodAnalyseObject = MoodAnalyzerFactory.CreateMoodAnalysis("MoodAnalyser.DemoClass", "DemoClass");
+            }
+            catch(MoodAnalysisCustomException e)
+            {
+                //Assert
+                Assert.AreEqual(expected, e.Message);
+            }
+        }
+
+
+        /// <summary>
+        /// Test Case 4.3 Given Improper Constructor name should throw MoodAnalysisCustomException.
+        /// </summary>
+        [TestMethod]
+        public void GivenImproperConstructorNameShouldThrowMoodAnalyserCustomeException()
+        {
+            //Arrange
+            string expected = "Constructor is Not Found";
+            try
+            {
+                //Act
+                object moodAnalyseObject = MoodAnalyzerFactory.CreateMoodAnalysis("DemoClass", "MoodAnalyser");
+            }
+            catch(MoodAnalysisCustomException e)
+            {
+                //Assert
+                Assert.AreEqual(expected, e.Message);
+            }
+        }
+
+
+
+
+
 
     }   
 }
