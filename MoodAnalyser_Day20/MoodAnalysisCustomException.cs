@@ -18,7 +18,7 @@ namespace MoodAnalyser_Day20
         private readonly ExceptionType type;
 
 
-        public MoodAnalysisCustomException(ExceptionType type, string message)
+        public MoodAnalysisCustomException(ExceptionType type, string message): base(message)
         {
             this.type = type;
         }

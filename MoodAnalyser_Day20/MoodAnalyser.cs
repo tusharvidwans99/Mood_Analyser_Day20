@@ -8,7 +8,15 @@ namespace MoodAnalyser_Day20
 {
     public class MoodAnalyser
     {
+
+        public MoodAnalyser() { }
+
         public string message;
+
+        /// <summary>
+        /// Parameterized Contructor.
+        /// </summary>
+        /// <param name="message"></param>
 
         
         public MoodAnalyser(string message)
@@ -18,13 +26,17 @@ namespace MoodAnalyser_Day20
 
         public string AnalyseMood()
         {
-            NullException nullException = new NullException();
+            CustomExceptionHandler customExceptionhandler = new CustomExceptionHandler();
 
             try
             {
-                if(message == null || message == "")
+                if(message == null)
                 {
-                    nullException.shownullException(message);
+                    customExceptionhandler.shownullException(message);
+                }
+                if(message == "")
+                {
+                    customExceptionhandler.showEmptyException(message);
                 }
                 if (message.Contains("sad"))
                 {
@@ -34,7 +46,7 @@ namespace MoodAnalyser_Day20
                 {
                     return "Happy";
                 }
-            }catch(MoodAnalysisException e)
+            }catch(MoodAnalysisCustomException e)
             {
                 Console.WriteLine(e.Message);
                 return e.Message;

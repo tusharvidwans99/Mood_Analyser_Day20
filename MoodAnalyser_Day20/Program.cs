@@ -7,7 +7,9 @@
     {
         public static void Main(string[] args)
         {
-            
+            MoodAnalyser moodAnalyser = new MoodAnalyser("");
+            string a = moodAnalyser.AnalyseMood();
+            Console.WriteLine(a);
         }
     }
 }

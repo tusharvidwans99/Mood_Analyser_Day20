@@ -52,7 +52,7 @@ namespace TestMoodAnalyser
 
             //Arrange
             string message = null;
-            string expected_Output = "Enterd Null Input";
+            string expected_Output = "Mood should not be null";
             string actual_Output;
 
             MoodAnalyser moodAnaylyser = new MoodAnalyser(message);
@@ -73,7 +73,7 @@ namespace TestMoodAnalyser
 
             //Arrange
             string message = "";
-            string expected_Output = "Empty Mood";
+            string expected_Output = "Mood should not be Empty";
             string actual_Output;
 
             MoodAnalyser moodAnaylyser = new MoodAnalyser(message);
@@ -96,10 +96,12 @@ namespace TestMoodAnalyser
             object actual;
 
             //Act
-            actual = new MoodAnalyser(message);
+            actual = MoodAnalyzerFactory.CreateMoodAnalysis("MoodAnalyser_Day20.MoodAnalyser","MoodAnalyser");
 
             //Assert
             expected.Equals(actual);
         }
-    }
+
+        
+    }   
 }
