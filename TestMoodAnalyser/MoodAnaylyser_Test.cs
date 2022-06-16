@@ -86,5 +86,20 @@ namespace TestMoodAnalyser
             Assert.AreEqual(expected_Output, actual_Output);
 
         }
+
+        [TestMethod]
+        public void ClassNameReturnSameObject()
+        {
+            //Arrange
+            string message = null;
+            object expected = new MoodAnalyser(message);
+            object actual;
+
+            //Act
+            actual = new MoodAnalyser(message);
+
+            //Assert
+            expected.Equals(actual);
+        }
     }
 }
