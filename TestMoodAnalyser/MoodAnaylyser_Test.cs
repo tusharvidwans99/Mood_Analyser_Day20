@@ -151,6 +151,19 @@ namespace TestMoodAnalyser
             }
         }
 
+        [TestMethod]
+        public void GivenMoodAnalyserClassName_ShouldReturnMoodAnalyseObject_UsingParameterizedConstr()
+        {
+            //Arrange
+            object expected = new MoodAnalyser("Happy");
+
+            //Act
+            object actual = MoodAnalyzerFactory.CreateMoodAnalyseUsingParameterizedConstructor("MoodAnalyser_Day20.MoodAnalyser", "MoodAnalyser", "HAPPY");
+
+            //Assert
+            expected.Equals(actual);
+        }
+
 
 
 
