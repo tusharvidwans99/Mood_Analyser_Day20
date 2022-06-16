@@ -164,6 +164,22 @@ namespace TestMoodAnalyser
             expected.Equals(actual);
         }
 
+        [TestMethod]
+        public void GivenImproperClassName_ShouldthrowMoodAnalyserCustomException_UsingParameterizedConstr()
+        {
+            //Arrange
+            string expected = "Class not found";
+            try
+            {
+                //Act
+                object moodAnalyserObject = MoodAnalyzerFactory.CreateMoodAnalyseUsingParameterizedConstructor("MoodAnalyser.DemoClass", "DemoClass", "HAPPY");
+            }catch(MoodAnalysisCustomException e)
+            {
+                //Assert
+                Assert.AreEqual(expected,e.Message);
+
+            }
+        }
 
 
 
