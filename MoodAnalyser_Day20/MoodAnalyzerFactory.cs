@@ -80,5 +80,28 @@ namespace MoodAnalyser_Day20
             }
         }
 
+        /// <summary>
+        /// Using Reflection to invoking MoodAnalyser method.
+        /// </summary>
+        /// <param name="message"></param>
+        /// <param name="methodname"></param>
+        /// <returns></returns>
+        /// <exception cref="MoodAnalysisCustomException"></exception>
+        public static string InvokeAnalyseMood(string message, string methodname)
+        {
+            try
+            {
+                Type type = Type.GetType("MoodAnalyser_Day20.MoodAnalyser");
+                object moodAnalyseObject = MoodAnalyzerFactory.CreateMoodAnalyseUsingParameterizedConstructor("MoodAnalyser_Day20.MoodAnalyser", "MoodAnalyser", message);
+                MethodInfo analyseMoodInfo = type.GetMethod(methodname);
+                object mood = analyseMoodInfo.Invoke(moodAnalyseObject, null);
+                return mood.ToString();
+            }
+            catch (NullReferenceException)
+            {
+                throw new MoodAnalysisCustomException(MoodAnalysisCustomException.ExceptionType.NO_SUCH_METHOD, "Method is not found");
+            }
+        }
+
     }
 }
