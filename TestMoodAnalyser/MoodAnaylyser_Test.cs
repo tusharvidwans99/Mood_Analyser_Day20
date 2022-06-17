@@ -151,6 +151,9 @@ namespace TestMoodAnalyser
             }
         }
 
+        /// <summary>
+        /// Test Case 5.1= Given MoodAnalyser Class Name Should Return Mood Analyser Object Using Parameterized Constructor
+        /// </summary>
         [TestMethod]
         public void GivenMoodAnalyserClassName_ShouldReturnMoodAnalyseObject_UsingParameterizedConstr()
         {
@@ -164,6 +167,10 @@ namespace TestMoodAnalyser
             expected.Equals(actual);
         }
 
+
+        /// <summary>
+        /// Test Case 5.2 Given Improper ClassName Should throw MoodAnalyser CustomException Using Parameterized Constructor.
+        /// </summary>
         [TestMethod]
         public void GivenImproperClassName_ShouldthrowMoodAnalyserCustomException_UsingParameterizedConstr()
         {
@@ -177,6 +184,28 @@ namespace TestMoodAnalyser
             {
                 //Assert
                 Assert.AreEqual(expected,e.Message);
+
+            }
+        }
+
+
+        /// <summary>
+        ///Test Case 5.3= Given Improper Constructor Name Should throw MoodAnalyserCustomException Using Parameterized Construcotr.
+        /// </summary>
+        [TestMethod]
+        public void GivenImproperConstructorName_ShouldthrowMoodAnalyserCustomException_UsingParameterizedConstr()
+        {
+            //Arrange
+            string expected = "Constructor is not found";
+            try
+            {
+                //Act
+                object moodAnalyserObject = MoodAnalyzerFactory.CreateMoodAnalyseUsingParameterizedConstructor("MoodAnalyser_Day20.MoodAnalyser", "DemoClass", "HAPPY");
+            }
+            catch (MoodAnalysisCustomException e)
+            {
+                //Assert
+                Assert.AreEqual(expected, e.Message);
 
             }
         }
